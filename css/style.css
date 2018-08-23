@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css?family=Catamaran:300,500,700");
+body {
+  background: #333533;
+  overflow: hidden;
+  font-family: "Catamaran", sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+body a:hover {
+  text-decoration: none;
+}
+body .hide {
+  display: none;
+}
+body .starting-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+body .starting-page #logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+body .starting-page h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 60px;
+  text-align: center;
+  padding: 0 20px;
+}
+body .starting-page #loading-animation span {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  content: "";
+  background-color: #e8eddf;
+  border-radius: 100%;
+  -webkit-animation: bounce 1.5s;
+          animation: bounce 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+body .starting-page #loading-animation span:not(:last-child) {
+  margin-right: 5px;
+}
+body .starting-page #loading-animation span:first-child {
+  -webkit-animation-delay: 0.17s;
+          animation-delay: 0.17s;
+}
+body .starting-page #loading-animation span:nth-child(2) {
+  -webkit-animation-delay: 0.33s;
+          animation-delay: 0.33s;
+}
+body .starting-page #loading-animation span:nth-child(3) {
+  -webkit-animation-delay: 0.49s;
+          animation-delay: 0.49s;
+}
+body .starting-page #loading-animation span:nth-child(4) {
+  -webkit-animation-delay: 0.65s;
+          animation-delay: 0.65s;
+}
+body .starting-page #loading-animation span:nth-child(5) {
+  -webkit-animation-delay: 0.81s;
+          animation-delay: 0.81s;
+}
+body .starting-page #loading-animation span:nth-child(6) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+body .weather {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .weather .icon {
+  margin-right: 10px;
+  color: #f5cb5c;
+}
+body .weather #weather-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 200px;
+  margin: 20px;
+}
+body .weather .switch-units {
+  color: #636e72;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+body .weather .toggle {
+  width: auto;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 5px;
+}
+body .weather .toggle .checked {
+  background-color: #f5cb5c;
+  box-shadow: inset 0px 0px 6px black;
+}
+body .weather .toggle .checked > p {
+  color: black;
+}
+body .weather .toggle #c-toggle {
+  flex: 1;
+  background-color: #333533;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+body .weather .toggle #c-toggle p {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 0;
+  color: white;
+  padding: 5px 30px;
+}
+body .weather .toggle #f-toggle {
+  background-color: #333533;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+body .weather .toggle #f-toggle p {
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 0;
+  padding: 5px 30px;
+  position: relative;
+}
+body .weather #temp {
+  font-size: 10rem;
+  color: white;
+  line-height: 1;
+  margin-bottom: 0;
+}
+body .weather #city {
+  font-size: 2rem;
+  padding: 0 2em;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #fff;
+}
+body .weather #credits {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+body .weather #credits p {
+  font-size: 1rem;
+  margin: 0 20px 10px 0;
+  color: #636e72;
+  letter-spacing: 2px;
+  transition: 0.3s linear;
+}
+body .weather #credits p:hover {
+  color: #f5cb5c;
+}
+@media (max-width: 425px) {
+  body .weather #temp {
+    font-size: 6rem;
+  }
+  body .weather #city {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+  body .weather #weather-logo {
+    max-width: 125px;
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+		100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+    background-color: #f5cb5c;
+  }
+}
+@keyframes bounce {
+  0%,
+		100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+    background-color: #f5cb5c;
+  }
+}

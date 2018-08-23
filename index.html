@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Klimate - Simple Weather App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="starting-page">
+	<img id = "logo" src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1881235/klimate-logo.png' alt="klimate logo"/>
+	<h3>Please wait while we load something simple but awesome.</h3>
+	<div id="loading-animation">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</div>
+<div class="weather hide">
+
+	<img id = "weather-logo" src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1881235/klimate-logo.png' alt="klimate logo"/>
+
+	<h1 id="temp"></h1>
+	<h1 id="city"></h1>
+	<p class="switch-units">SWITCH UNITS</p>
+	<div class="toggle">
+		<div id="f-toggle">
+			<p id="f-temp-unit">F</p>
+		</div>
+		<div id="c-toggle">
+			<p id="c-temp-unit" class="checked">C</p>
+		</div>
+	</div>
+	<div id="credits">
+		<a href="https://www.danieljbailey.com"><p>CODED BY ME</p></a>
+	</div>
+</div>
+
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C" crossorigin="anonymous"></script>
+<!-- https://coolors.co/cfdbd5-e8eddf-f5cb5c-242423-333533 -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
