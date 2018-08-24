@@ -1,5 +1,5 @@
 # Klimate
-This is a weather application to get the weather based on your current location. The application uses HTML5 geolocation to get the users current position using longitude and lattitude. The application these uses the geolocation information and passes it to Google's location based API to get a more accurate position of the user. Once the application receives the response from google it then requests the current weather using FCC weather and displays for the user to see. 
+A weather application to get the weather based on your current location. The application uses HTML5 geolocation to get the users current position using longitude and latitude. The application these uses the geolocation information and passes it to Google's location based API to get a more accurate position of the user. Once the application receives the response from google it then requests the current weather using FCC weather and displays for the user to see. 
 
 # View Demo
 [Live](https://www.danieljbailey.com/projects/klimate/)
